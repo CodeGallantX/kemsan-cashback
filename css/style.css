@@ -4885,6 +4885,7 @@ html {
     }
   }
   
+  
   @media screen and (max-width: 991px) {
     .button {
       position: relative;
@@ -6146,3 +6147,10 @@ html {
   display: block;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .nav-menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
