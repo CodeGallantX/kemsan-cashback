@@ -3812,8 +3812,16 @@ html {
     line-height: 1.4em;
   }
   
-  .logo {
+  .logo-text {
     display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: Montserrat;
+    margin-top: 16px;
+  }
+  .logo-text span {
+    font-weight: 800;
+    font-size: 2rem;
   }
   
   .nav-link {
@@ -4925,6 +4933,8 @@ html {
       -webkit-flex: 0 auto;
       -ms-flex: 0 auto;
       flex: 0 auto;
+      flex-direction: row;
+      align-items: center;
     }
   
     .nav-logo {
@@ -5484,10 +5494,6 @@ html {
     .nav-container {
       padding-top: 8px;
       padding-bottom: 8px;
-    }
-  
-    .logo {
-      max-width: 90%;
     }
   
     .nav-link {
