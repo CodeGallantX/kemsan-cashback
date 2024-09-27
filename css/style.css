@@ -6146,11 +6146,3 @@ html {
 .dropdown:hover .dropdown-list {
   display: block;
 }
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .nav-menu {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
