@@ -1,26 +1,18 @@
-// Get all tab links
-const tabLinks = document.querySelectorAll('.tab-text-box');
-
-// Add event listener to each tab link
-tabLinks.forEach((link) => {
-  link.addEventListener('click', (e) => {
-    // Get the data-w-tab attribute of the clicked link
-    const tabId = link.getAttribute('data-w-tab');
-
-    // Remove w--tab-active class from all tab panes
-    document.querySelectorAll('.w-tab-pane').forEach((pane) => {
-      pane.classList.remove('w--tab-active');
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.w-tab-link');
+    const contents = document.querySelectorAll('.w-tab-content');
+  
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        // Remove active class from all tabs and content
+        tabs.forEach(t => t.classList.remove('w--current'));
+        contents.forEach(c => c.style.display = 'none');
+  
+        // Add active class to the clicked tab and display its content
+        tab.classList.add('w--current');
+        contents[index].style.display = 'block';
+      });
     });
-
-    // Add w--tab-active class to the tab pane corresponding to the clicked link
-    document.querySelector(`.w-tab-pane[data-w-tab="${tabId}"]`).classList.add('w--tab-active');
-
-    // Remove w--current class from all tab links
-    document.querySelectorAll('.w-tab-link').forEach((link) => {
-      link.classList.remove('w--current');
-    });
-
-    // Add w--current class to the clicked link
-    link.classList.add('w--current');
   });
-});
+  
