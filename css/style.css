@@ -3825,14 +3825,14 @@ html {
   }
   .logo-text span {
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .footer-logo-text {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     font-size: 1rem;
     font-weight: 600;
     font-family: Montserrat;
@@ -4955,6 +4955,7 @@ html {
       flex: 0 auto;
       flex-direction: row;
       align-items: center;
+      margin-top: 43px;
     }
   
     .nav-logo {
