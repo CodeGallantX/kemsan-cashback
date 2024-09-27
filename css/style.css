@@ -3822,6 +3822,7 @@ html {
     font-weight: 600;
     font-family: Montserrat;
     margin-bottom: 0;
+    margin-top: px;
   }
   .logo-text span {
     font-weight: 800;
@@ -4955,7 +4956,6 @@ html {
       flex: 0 auto;
       flex-direction: row;
       align-items: center;
-      margin-top: 43px;
     }
   
     .nav-logo {
