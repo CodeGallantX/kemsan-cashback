@@ -3752,7 +3752,7 @@ html {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: 75px;
+    height: 96px;
     max-width: 1230px;
     margin-right: auto;
     margin-left: auto;
@@ -3813,15 +3813,19 @@ html {
   }
   
   .logo-text {
-    display: block;
-    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
     font-weight: 600;
     font-family: Montserrat;
-    margin-top: 16px;
+    margin-top: 22px;
   }
   .logo-text span {
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .footer-logo-text {
     display: flex;
