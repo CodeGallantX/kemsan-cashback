@@ -10,3 +10,12 @@
     .tab-text-box.active .dropdown-arrow {
         transform: rotate(180deg);
     }
+
+    .tab-content {
+        display: none; /* Hide all content by default */
+    }
+    
+    .tab-content.active {
+        display: block; /* Show only the active content */
+    }
+    
