@@ -3830,15 +3830,18 @@ html {
   .footer-logo-text {
     display: flex;
     flex-direction: column;
-    font-size: 1.8rem;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
     font-weight: 600;
     font-family: Montserrat;
-    margin-top: 16px;
+    margin-top: 22px;
     color: #fff;
   }
   .footer-logo-text span {
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   
   .nav-link {
