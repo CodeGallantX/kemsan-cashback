@@ -1,0 +1,12 @@
+
+    .intro {
+        flex: 1;
+        margin-left: 1rem;
+    }
+    .dropdown-arrow {
+        margin-left: auto;
+        transition: transform 0.3s;
+    }
+    .tab-text-box.active .dropdown-arrow {
+        transform: rotate(180deg);
+    }
